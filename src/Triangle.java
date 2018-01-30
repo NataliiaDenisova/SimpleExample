@@ -16,7 +16,7 @@ public class Triangle {
             ta[x].length = x + 4;
             ta[x].setArea();
 
-            System.out.print("реугольник "+x+", зона");
+            System.out.print("треугольник "+x+", зона");
             System.out.println(" = " + ta[x].area);
 
             x = x + 1;
