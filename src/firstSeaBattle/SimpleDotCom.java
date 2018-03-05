@@ -8,21 +8,28 @@ public class SimpleDotCom {
     int[] locationCells;
     int numOfHits = 0;
 
-    public String checkYourself(String userGuess){
+    public String checkYourself(String userGuess) {
         int guess = Integer.parseInt(userGuess);
         String result = "Мимо";
 
-        if(userGuess == locationCells[]){
-            numOfHits++;
-            //*
-        } else{
-
+        for (int cell : locationCells) {
+            if (guess == cell) {
+                result = "Попал";
+                numOfHits++;
+                break; // выбираемся из цикла: другие ячейки проверять не нужно
+            }
         }
-        return "J";
+
+        if (numOfHits == locationCells.length) {
+            result = "Потопил";
+        }
+        System.out.println(result); //выводим мимо, если результат не был изменен
+
+        return result; // возвращаем результат в вызывающий метод
     }
 
-    public void setLocationCells(int[] cellLocations){
-
+    public void setLocationCells(int[] locs){
+        locationCells = locs;
     }
 
 }

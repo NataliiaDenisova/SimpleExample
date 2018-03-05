@@ -10,8 +10,10 @@ public class TestBox {
     int j = 2;
 
     public static void main(String[] args){
-        TestBox t = new TestBox();
-        t.go();
+        //TestBox t = new TestBox();
+        //t.go();
+        int random = (int)(Math.random()*5);
+        System.out.println(random);
     }
 
     public void go(){
