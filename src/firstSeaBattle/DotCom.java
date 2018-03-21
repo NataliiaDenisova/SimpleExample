@@ -23,12 +23,11 @@ public class DotCom {
 
             if (locationCells.isEmpty()) {
                 result = "Потопил";
+                System.out.println("Ой! Вы потопили " + dotName + ".");
             } else {
                 result = "Попал";
             }
-
         }
-        System.out.println(result);
         return result;
     }
 
