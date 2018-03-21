@@ -81,7 +81,7 @@ public class GameHelper {
             x++;
             //System.out.println("coord " + x + "=" + alphaCells.get(x-1));
         }
-        //System.out.println("\n");
+        System.out.println("\n");
         return alphaCells;
     }
 }
